@@ -1,0 +1,173 @@
+html{
+        background: linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
+
+}
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100vh;
+    background-image: url(./images/bg-stars.svg);
+    background-size: cover;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 142px 24px 0px;
+    
+}
+h1{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 6.13636px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+#timer{
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 54px;
+}
+.box{
+    display: flex;
+    width: 70px;
+    height: 66px;
+    background-color: #343650;
+    border-radius: 4px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+.number{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 71px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1.08px;
+    color: #FB5E84; 
+}
+.parts{
+    display: flex;
+    gap: 64px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.ball{
+    width: 6px;
+    height: 6px;
+    background: #191A23;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 50%;
+}
+.line{
+    position: absolute;
+    border: 0.5px solid #000000;
+    width: 64px;
+    opacity: 0.25;
+    mix-blend-mode: normal;
+    height: 0px;
+}
+h3{
+    font-weight: 700;
+    font-size: 7px;
+    line-height: 9px;
+    text-align: center;
+    letter-spacing: 2.95937px;
+    color: #8385A9;
+    text-transform: uppercase;
+}
+
+footer{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 168px;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.background{
+    position: absolute;
+    background-image: url(./images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    height: 168px;
+    margin-right: 640px;
+}
+.contact{
+    display: flex;
+    gap: 32px;
+    margin-bottom: 48px;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 800px){
+
+    main{
+        margin: 132px 24px 0px;   
+    }
+    h1{
+        font-size: 22px;
+        line-height: 29px;
+        letter-spacing: 7.5;
+    }
+    #timer{
+        gap: 32px;
+        margin-top: 104px;
+    }
+    .box{
+        width: 148px;
+        height: 140px;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+    .number{
+        font-size: 80px;
+        letter-spacing: -2.4px;
+    }
+    .parts{
+        gap: 136px;
+    }
+    .ball{
+        width: 12px;
+        height: 12px;
+    }
+    .line{
+        width: 136px;
+    }
+    h3{
+        font-size: 14px;
+        line-height: 18.5px;
+        letter-spacing: 6px;
+    }
+    
+    footer{
+        height: 200px;
+       
+    }
+    .background{
+        height: 200px;
+        margin-right: 0px;
+    }
+    .contact{
+        margin-bottom: 72px;
+    }
+    .contact img:hover{
+        filter: invert(59%) sepia(38%) saturate(6007%) hue-rotate(314deg) brightness(105%) contrast(97%);
+    }
+}
