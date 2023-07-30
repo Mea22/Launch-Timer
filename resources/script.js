@@ -6,7 +6,7 @@ const  s = document.getElementById("seconds")
 //get set interval and write function that gets days hours minutes and seconds from miliseconds and puts it on html.
 const set = setInterval( (() =>{
 
-    let start = new Date("may 25").getTime();
+    let start = new Date("may 25,2024 00:01").getTime();
     let now = new Date().getTime();
     let time = start - now;
 
